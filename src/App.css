@@ -1,38 +1,124 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.form {
+   
+    /* max-width: 1000px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    
+    
+}
+/* .main_data{
+   display: flex;
+   justify-content: center; 
+} */
+.new-data {
+    border: 1px solid #ccc;
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    background-color: #f9f9f9;
+   
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Save {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Save button {
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    background-color: #34d634;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.Save button:hover {
+    background-color: #42b342;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input {
+    margin-bottom: 15px;
+    
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.Table {
+    margin-top: 20px;
+    width: 70%;
+}
+
+.Table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.Table th,
+.Table td {
+   
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.Table th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.Table button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 14px;
+    background-color: white;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.edit{
+    background-color: white ;
+}
+.edit img{
+    height: 20px;
+}
+.del{
+    background-color: white;
+}
+.del img{
+    height: 20px;
+}
+
+.action{
+    width: 20%;
+}
+.Table button:hover {
+ background-color: rgb(206, 198, 198);
+}
+
+.Table tr:hover {
+    background-color: #f2f2f2;
 }
